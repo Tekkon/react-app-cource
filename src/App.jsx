@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MainLayout } from "./components/MainLayout";
+import { HomePage } from "./pages/HomePage";
 
 function App() {
   // return <MainLayout />;
@@ -8,9 +9,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<MainLayout />}>
-          <Route path="/" element={<div>home</div>} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/forbidden" element={<div>forbidden</div>} />
-          <Route path="/addquestion" element={<div>add question</div>} />
+          <Route path="/add-question" element={<div>add question</div>} />
         </Route>
       </Routes>
     </BrowserRouter>
